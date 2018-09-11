@@ -1,3 +1,24 @@
+#Sasha Falenchuk
+#9/10/18
+#No outside sources
+#The code is just asking some basic questions about yourself
+
+
+
 print("Hello, world")
 username = input("What is your name?")
 print("Nice to meet you, "+username+"!")
+mood = input("How are you doing today?")
+print("That's great that you are "+mood+"!")
+plans = input("Do you have any plans today?")
+print("That's really cool!")
+color = input("what's your favorite color?")
+print("That's cool, I also love "+color+"!")
+weather = input("What's your favorite type of weather?")
+print("Wow! me too. I think "+weather+" is the coolest!")
+food = input("How about food, what's you're favorite?")
+print(" "+food+" is cool and all, but I actually love broccoli.")
+home = input("Where are you from?")
+place = input("I heard that "+home+" is a beautiful place, what is your favorite place in "+home+"?")
+print(" "+place+" is also really nice!")
+print("Well, nice to meat you, you're the best!")
