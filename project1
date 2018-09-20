@@ -1,0 +1,40 @@
+def start():
+    choice = input("\n\n\n\n\n\n\nHello!\n\nYou have been chosen to be the first man on Mars!\n\nAre you readY?\n 1) Yes 2) No\n\n>> ")
+
+    if choice == "1":
+    	choice = input("Sounds Great! \n\n\nYou arrive at SpaceX HQ, and are personally greeted by Elon Musk. \n\nHe gives you a choice 1) The the brand new Tesla electric 
+    	rocket (Tesla rocket)  or 2) Falcon rocket\n\n>>")
+
+    	if choice == "1":
+    		print ("Oh No, Electric rockets can't really work. Although you manage to get off the ground, the battery runs out in seconds, and you plumme tot the ground in a ball of fire.")
+    		exit()
+
+    	elif choice =="2":
+    		spacetime()	
+
+    	else
+    		print("Try again 1 or 2 only fool.")
+    		start()
+    elif choice =="2":
+    	choice = input("Bummer, such a great opportunity missed out on.")
+    	exit()
+    else
+    	print("Try again 1 or 2 only fool.")
+    	start()
+
+spacetime:
+	choice = input("You've finally made it to space. Yay!\n\nBut wait! all of a sudden theres a problem.\n\nEverything's flashing red. What do you do?\n\n1)Keep going 2) Turn around")
+
+	if choice == "Turn around":
+    		print ("Oh No, Electric rockets can't really work. Although you manage to get off the ground, the battery runs out in seconds, and you plumme tot the ground in a ball of fire.")
+    		exit()
+
+    	elif choice =="Keep going":
+    		spacetime()	
+
+    	else
+    		print("Try again 1 or 2 only fool.")
+    		start()
+
+
+start()
