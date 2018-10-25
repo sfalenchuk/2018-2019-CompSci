@@ -1,3 +1,9 @@
+#Sasha
+#3 Fractals
+#used atopon.org/mandel
+#overall the project went really well, and was fun
+#On my honor, I have neither given nor recieved unauthorized aid
+
 from PIL import Image
 import random
 
@@ -7,8 +13,8 @@ ymin, ymax = .1, .39166666666666
 amin, amax = -0.34166666666666, 0.1833333333333
 bmin, bmax = -1.09166666666666, -0.5666666666666
 
-cmin, cmax = -2.0, 1
-dmin, dmax = -1.5, 1.5
+cmin, cmax = -1, 1
+dmin, dmax = -1, 1
 
 imgx, imgy = 512, 512
 imga, imgb = 512, 512
@@ -65,9 +71,9 @@ for y in range(imgd):
 				break
 			z = z**2 + m
 
-			r = 512-i
-			g = (i*100)%256
-			b = i-100
+			r = i
+			g = i%50
+			b = 1*50
 
 
 			image3.putpixel((x,y),(b+0+r*65536))
