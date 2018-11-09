@@ -41,12 +41,7 @@ class Deck:
 	__repr__ = __str__
 
 
-dealer_deck = Deck()
-player_deck = Deck(0)
-print(dealer_deck)
-for i in range(26):
-	player_deck.add_card(dealer_deck.deal())
-print(dealer_deck)
-print(player_deck)
-print(dealer_deck.contains(Card(2,"Hearts")))
+deck = Deck()
+print(deck)
+
 

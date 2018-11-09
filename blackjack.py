@@ -3,13 +3,7 @@ from card import Card
 from deck import Deck
 from random import shuffle
 
-class Dealer:
-    def __init__(self, balance):
-        self.name = name
-        self.balance = balance
-        self.status = status
-
-class Dealer:
+class Person:
     def __init__(self, balance):
         self.name = name
         self.balance = balance
@@ -20,15 +14,7 @@ class Hand:
         self.hand = []
 
     def add_card(self, card):
-        self.hand.append(card)
-        return self.hand
-
-class DealerHand:
-    def __init__(self):
-        self.hand = []
-
-    def add_card(self, card):
-        self.hand.append(card)
+        self.hand.append(card[0])
         return self.hand
 
 print("Hello, and welcome to Blackjack. Blackjack is an advanced gambling game in which it is your job to reach the number 21")
@@ -43,6 +29,14 @@ choice = input("All players start with ten thousand dollars, ready to begin?")
 
 	elif choice =="no":
 		print("Alright, read the rules again")
+
+dealer_hand = Hand()
+player_hand = Hand()
+
+dealer = Person()
+player = Person()
+
+
 
 
 
