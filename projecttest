@@ -1,0 +1,50 @@
+
+
+def start():
+	choice = input("Congrats, you have been chosen to be the first man on Mars by Elon Musk. Do you want to fly in the 1) New Tesla Rocket or 2) The normal Falcon rocket")
+
+	if choice == ("1"):
+		print ("Oh no, the battery runs out too quickly, and you die. Sorry.")
+		quit()
+
+	elif choice == ("2"):
+		choice = input("Sounds great. You take the rocket up to space, but your engines fail, do you 1) Keep going or 2) Return to earth")
+		
+		if choice == ("1"):
+			choice = input("You keep going, and the engines come back into check, and you continue on youir journey. You then get to Mars, there's a huge sandstorm at the landing spot. Should you land at the 1)The new area - a mountain a few hundred miles north or 2) The planned spot")
+
+			if choice == ("1"):
+				print("Wow, you finally made it. So glad that you got a chance to join us on this journey. Now it's to explore Mars. The End.")
+				quit()
+
+			elif choice == ("2"):
+				choice = input("As you come down, the winds start to knock you off course, you crash violently into the ground. You finally wake up in the hull of your spaceship, barely consious. Do you 1) Search for your supplies or 2) Try to repair your ship.")
+
+				if choice == ("1"):
+					print("You go out into the Martian desert, and slowly begin to gather up your supplies. You suddenly see something in the distance, and it looks like your food supplies. Do you 1) Go after it or 2) return back to your ship")
+
+					if choice == ("1"):
+						print("As you go out to it, you forget that you have limited oxygen. By the time you realize it's too late to turn around. The End.")
+						quit()
+
+					elif choice == ("2"):
+						choice = input("You come back, but without food or water you barely last three days. The End")
+						quit()
+
+				elif choice == ("2"):
+					print("Your ship is in tip top shape, But with not enough supplies you can't make it. Sorry. The End")
+					quit()
+		
+		elif choice == ("2"):
+			choice = input("You start coming down, and its time to open your parachute do you 1) Open above the ocean or 2) Open above the Space Center")
+
+			if choice == ("1"):
+				print("Thank god. You come down in the ocean, and the water cusions your impact. The coast guard then comes and rescues you. The End.")
+		
+			elif choice == ("2"):
+				print("Oh no. You come down on the hard asphalt, which you flatten on. The End.")
+start()
+
+		
+
+

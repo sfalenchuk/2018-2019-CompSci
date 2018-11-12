@@ -26,15 +26,25 @@ spacetime:
 	choice = input("You've finally made it to space. Yay!\n\nBut wait! all of a sudden theres a problem.\n\nEverything's flashing red. What do you do?\n\n1)Keep going 2) Turn around")
 
 	if choice == "Turn around":
-    		print ("Oh No, Electric rockets can't really work. Although you manage to get off the ground, the battery runs out in seconds, and you plumme tot the ground in a ball of fire.")
-    		exit()
+    		print ("You begin to re-enter Earth's orbit. You notice that the thrusters don't work, meaning that you will have to use the emegency parachutes. You have to choices do you land at the 1) Space center or the 2) Ocean")
+    			if choice == "Space center":
+    				print ("You deploy your parachutes and drop down towards the ground, but unfortunately the impact on asphalt completely flattens the capsule and everything blows up.")
+    				exit()
+
+    			elif choice == "2":
+    				spacetime()	
+
+    			else
+    				print("Try again 1 or 2 only fool.")
+    				start()
 
     	elif choice =="Keep going":
-    		spacetime()	
+    		continuing()	
 
     	else
     		print("Try again 1 or 2 only fool.")
-    		start()
+    		spacetime()
+continuing:
 
 
 start()

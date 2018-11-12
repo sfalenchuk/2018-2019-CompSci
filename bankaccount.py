@@ -1,42 +1,42 @@
 class Account:
-	def__init__(self, balance):
+	def __init__(self, balance, status, name):
 		self.name = name
 		self.balance = balance
 		self.status = status
 
-	def deposit(self, balance):
+	def deposit(self, amount):
 		status = ""
-		if self.balance > 0:
+		if self.balance >= 0:
 			self.balance += amount
-			status = self.name+ ("has now made a deposit of "amount" dollars!")
+			status = self.name+ (" has now made a deposit of "+str(amount)+" dollars!")
 		else:
-			status = self.name+ "can't do that"
+			status = self.name+ " can't do that"
 		return status
 
-	def withdraw(self, balance):
+	def withdraw(self, amount):
 		status = ""
-		if self.balance > 0:
-			self.balance += amount
-			status = self.name+ ("has now made a withdraw of "amount" dollars!")
-		elif amount > balance:
-			status = self.name+ "doesn't have enough money"
+		if amount > balance:
+			status = self.name+ " doesn't have enough money"
+		elif self.balance > 0:
+			self.balance -= amount
+			status = self.name+ (" has now made a withdraw of "+str(amount)+" dollars!")
 		else:
-			status = self.name+ "can't do that"
+			status = self.name+ " can't do that"
 		return status
 
 	def stats(self):
 		return "Name: "+self.name+" \nBalance: "+str(self.balance)
 
-account = Account("accountname", 5)
+account = Account(5, "open", "Sasha")
 
 while True:
-	print(account1.stats())
+	print(account.stats())
 	choice = input("Whatcha wanna do?")
-		if choice is "deposit":
-			amount = input("how many dollars?")
-			print(account.deposit(amount))
-		elif choice is "withdraw":
-			amount = input("how many dollars?")
-			print(account.withdraw(amount))
-		else:
-			print("Can't do that.")
+	if choice == "deposit":
+		amount = int(input("how many dollars?"))
+		print(account.deposit(amount))
+	elif choice == "withdraw":
+		amount = int(input("how many dollars?"))
+		print(account.withdraw(amount))
+	else:
+		print("Can't do that.")

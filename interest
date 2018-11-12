@@ -1,0 +1,8 @@
+import sys
+
+p = float(sys.argv[1])
+t = float(sys.argv[2])
+r = float(sys.argv[3])
+
+m = p*(2.71828**((r/100)*t))
+print(m)

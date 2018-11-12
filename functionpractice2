@@ -1,0 +1,10 @@
+def start():
+    choice = input("\n\n\n\n\n\n\nGreetings! \n\nYou are walking to the dining hall one day when you see a bear and a dinosaur. \n\nDo you 1) Run 2) Hide 3) Resist\n\n>> ")
+
+    if choice == "1":
+    	choice = input("Coward! \n\n\nYou run to the Dining Hall. \n\nDo you 1) Go back to your dorm or 2) Eat lunch\n\n>>")
+
+def inside():
+	pass
+
+start()

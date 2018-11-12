@@ -36,6 +36,31 @@ player_hand = Hand()
 dealer = Person()
 player = Person()
 
+add_card:
+
+dealer_hand
+
+while hand < 21
+    print(player_hand)
+
+    choice = input("Do you hit or stand?")
+
+    if choice == "yes":
+
+    elif choice =="no":
+        add_card
+        dealer_hand
+
+if dealer_hand == 21 or dealer hand < 21 and player_hand > 21
+    print("dealer wins")
+
+if dealer_hand == 21 or dealer hand < 21 and player_hand > 21
+    print("player wins")
+
+
+
+
+
 
 
 

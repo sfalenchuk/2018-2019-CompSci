@@ -1,0 +1,15 @@
+
+
+weather = input("whats it like outside?")
+
+if weather == "rain":
+    print("Bring umbrella")
+
+elif weather == "hail":
+    print("Stay inside")
+
+elif weather == "sunny":
+    print("put on sunscreen")
+
+else:
+    print("Don't bring umbrella")

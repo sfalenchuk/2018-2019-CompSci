@@ -1,0 +1,7 @@
+#Bitcoin Converter
+#Bitcoin to Dollars
+
+bitcoin = float(input("Bitcoin: "))
+dollar = bitcoin * 6510.00
+print("Dollars: " ,dollar)
+

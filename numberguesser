@@ -1,0 +1,24 @@
+
+import random
+
+number = random.randint(0,10) 
+
+def start():
+	guess = input("Guess my number")
+
+	if guess == number:
+		print ("You got it!")
+		quit()
+
+	elif guess < number:
+		print ("Too low, try again!")
+		start()
+
+
+	elif guess > number:
+		print ("Too high, try again!")
+		start()
+
+start()
+
+		

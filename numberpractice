@@ -1,0 +1,20 @@
+while True:
+	try:
+		x = int(input("Enter a number: "))
+		if  1<=x<=5:
+ 			print("nice")
+		else:
+			print("Wrong range")
+		
+	except ValueError:
+			print("Not a #")
+		
+
+
+
+
+
+
+
+
+
