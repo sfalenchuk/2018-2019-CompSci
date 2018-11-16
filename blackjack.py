@@ -3,19 +3,62 @@ from card import Card
 from deck import Deck
 from random import shuffle
 
-class Person:
-    def __init__(self, balance):
-        self.name = name
-        self.balance = balance
-        self.status = status
+# class Person:
+#     def __init__(self):
+#         self.name = name
+#         self.status = status
 
-class Hand:
-    def __init__(self):
-        self.hand = []
+# class Hand:
+#     def __init__(self):
+#         self.hand = []
 
-    def add_card(self, card):
-        self.hand.append(card[0])
-        return self.hand
+#     def add_card(self, card):
+#         self.hand.append(card[0])
+#         return self.hand
+def checkstatus(pchoice, dchoice):
+   
+    dhand = 0;
+
+    for card in dealer_hand.cards:
+        dhand += card.rank
+
+    hand = 0;
+
+    for card in player_hand.cards:
+        hand += card.rank
+
+
+    if dhand == 21 or (dhand < 21 and hand > 21):
+        print("dealer wins")
+        
+
+    if hand == 21 or (hand < 21 and dhand > 21):
+        print("player wins")
+
+    if pchoice == "stand" or dchoice == "stand":
+        
+        if hand > dhand:
+            print("player wins, dealer stands")
+
+        if dhand > hand:
+            print("dealer wins, player stands")
+
+        if hand == dhand or (hand > 21 and dhand > 21):
+            print ("bust, play again")
+
+
+
+
+
+
+
+
+deck = Deck()
+dealer_hand = Deck(0)
+player_hand = Deck(0)
+
+# dealer = Person()
+# player = Person()
 
 print("Hello, and welcome to Blackjack. Blackjack is an advanced gambling game in which it is your job to reach the number 21")
 
@@ -25,37 +68,51 @@ print("The game will continue until the players finish their turns, and then eve
 
 choice = input("All players start with ten thousand dollars, ready to begin?")
 
-	if choice == "yes":
 
-	elif choice =="no":
-		print("Alright, read the rules again")
+if choice == "yes":
 
-dealer_hand = Hand()
-player_hand = Hand()
+    player_hand.add_card(deck.deal())
 
-dealer = Person()
-player = Person()
+    dealer_hand.add_card(deck.deal())
 
-add_card:
+    hand = 0;
 
-dealer_hand
+    for card in player_hand.cards:
+        hand += card.rank
 
-while hand < 21
-    print(player_hand)
+    while hand < 21:
+        print(player_hand)
 
-    choice = input("Do you hit or stand?")
+        playerchoice = input("Do you hit or stand?")
+           
 
-    if choice == "yes":
+        if playerchoice == "hit":
+            player_hand.add_card(deck.deal())
 
-    elif choice =="no":
-        add_card
-        dealer_hand
+            dhand = 0;
 
-if dealer_hand == 21 or dealer hand < 21 and player_hand > 21
-    print("dealer wins")
+            for card in dealer_hand.cards:
+                dhand += card.rank
+            
+            if dhand < 16:
+                dealerchoice = "hit"
+                dealer_hand.add_card(deck.deal())
 
-if dealer_hand == 21 or dealer hand < 21 and player_hand > 21
-    print("player wins")
+                checkstatus(playerchoice, dealerchoice)
+            else:
+                dealerchoice = "stand"
+                print("dealer stands")
+
+                result = checkstatus(playerchoice, dealerchoice)
+
+elif choice == "no":
+    print("Alright, read the rules again")
+
+
+
+
+
+    
 
 
 
