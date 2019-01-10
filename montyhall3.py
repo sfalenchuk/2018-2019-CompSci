@@ -6,7 +6,7 @@ import random
 
 tries = 0
 
-while tries < 100:
+while tries < 1000:
 	tries += 1
 	gooddoor = random.randint(1,3)
 	print(gooddoor)
