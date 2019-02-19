@@ -1,3 +1,4 @@
+#economy graph
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
@@ -15,5 +16,7 @@ ax.annotate("periods of economic growth", (2011, 20),
             arrowprops=dict(facecolor='black', shrink=0.05),
             fontsize=16,
             horizontalalignment='right', verticalalignment='top')
+
+plt.title("Michigan and Illinois Economic Growth (2005-2005)")
 
 plt.show()

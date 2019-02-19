@@ -1,4 +1,4 @@
-#Sasha Falenchuk
+#Sasha Falenchuk and Alex Ruan
 
 ''' Instructions:
    Work with a partner to complete these tasks. Assume that all variables mentioned in the description are declared and initialized; however, feel free to use additional variable as necessary (please avoid extra variables, though; don't use them unless you must to store a required value or simplify your code.) Write your solution below the commented description.

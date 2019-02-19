@@ -1,5 +1,5 @@
 #Sasha Falenchuk
-#12/17/18
+#1/16/19
 
 ''' Instructions:
    Work with a partner to complete these tasks. Assume that all variables mentioned in the description are declared and initialized; however, feel free to use additional variable as necessary (please avoid extra variables, though; don't use them unless you must to store a required value or simplify your code.) Write your solution below the commented description.
@@ -8,88 +8,85 @@
 ''' 1. 
    Write a for loop that will print out all the integers from 0-4 in ascending order. 
 '''
-for x in range(5):
-    print(x)
+for i in range(5):
+    print(i)
  
 ''' 2. 
    Write a for loop that will print out all the integers from 0-4 in descending order.
 '''
-for x in range(4,-1,-1):
+ 
+ for x in range(4,-1,-1):
     print(x)
  
  
 ''' 3. 
    Write a for loop that will print out all the integers from 5-15 in descending order.
 '''
-for x in range(15,4,-1):
-    print(x)
  
+ for x in range(15,4,-1):
+    print(x)
  
 ''' 4. 
    Write a for loop that will print out all the integers from -5 to 5 in ascending order.
 '''
-for x in range(-5,6):
+ 
+ for x in range(-5,6):
     print(x)
+ 
  
  
 ''' 5. 
    Write two for loops that will both print out odd numbers from 25 to 49. The loops themselves must be different, but they will have the same output.
 '''
-for x in range(25,50,2):
+ 
+ for x in range(25,50,2):
     print(x)
  
-for x in range(13):
-    print(2*i+25)
  
  
 ''' 6. 
    Write a for loop that prints out the squares of the numbers from 1 to 10. ie 1, 4, 9, 16, ... 100
 '''
-for x in range(1,11):
-    print(i*i)
  
+ for x in range(1,11):
+    print(i*i)
  
 ''' 7. 
    Write while loops that do the same thing as numbers 1-6.
 '''
-# 1    Write a while loop that will print out all the integers from 0-4 in ascending order. 
+# 1
 x=0
 while x<5:
     print(x)
     x+=1
  
  
-# 2   Write a while loop that will print out all the integers from 0-4 in descending order.
+# 2
 x = 4
 while x>=0:
     print(x)
     x-=1
  
  
-# 3   Write a while loop that will print out all the integers from 5-15 in descending order.
+# 3 
 x=15
 while x>=5:
     print(x)
     x-=1
  
  
-# 4   Write a while loop that will print out all the integers from -5 to 5 in ascending order.
+# 4
 x=-5
 while x<=5:
     print(x)
     x+=1
  
   
-# 5   Write two while loops that will both print out odd numbers from 25 to 49. 
+# 5
 x=25
 while x<50:
     print(x)
     x+=2
- 
-x=0
-while x<13:
-    print(2*i+25)
-    x+=1
  
  
 # 6   Write a while loop that prints out the squares of the numbers from 1 to 10. ie 1, 4, 9, 16, ... 100

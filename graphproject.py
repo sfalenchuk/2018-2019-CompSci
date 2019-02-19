@@ -1,7 +1,7 @@
 #Great Lake State Charts
 #Sasha Falenchuk
 #1/16/19
-#5 graphs and charts analyzing Great Lakes states area, population, median income, median age, and economy
+#5 cool graphs and charts analyzing Great Lakes states area, population, median income, median age, and economy
 #This project was very fun, and I got to explore matplotlib quite a bit and do some cool and unique graphs. It took a quite a bit of effort to find some good data sets.
 #Used matplotlib.org
 #On my honor I have neither given nor received unauthorized aid
